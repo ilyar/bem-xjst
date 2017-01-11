@@ -12,6 +12,7 @@
   - [Extending BEMContext](#extending-bemcontext)
   - [Runtime linting](#runtime-linting)
   - [Production mode](#production-mode)
+  - [exportName](#exportname-option)
 * [Bundling](#bundling)
 
 ## Choosing an engine, compiling and applying templates
@@ -456,6 +457,12 @@ $ cat stderr.txt
 BEMXJST ERROR: cannot render block b1, elem undefined, mods {}, elemMods {} [TypeError: Cannot read property 'undef' of undefined]
 ```
 
+### exportName option
+
+You can use `exportName` option for choose name of variable where engine will
+be exported. By default it’s BEMHTML or BEMTREE.
+
+For example read next.
 
 ## Bundling
 
